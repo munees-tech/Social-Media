@@ -1,4 +1,3 @@
-import { FaLaptop, FaTabletAlt, FaMobileAlt } from 'react-icons/fa';
 
 import { useContext } from 'react';
 import DataContexts from '../contexts/DataContext';
@@ -8,9 +7,9 @@ const Header = () => {
   return (
     <header className="Header">
       <h1>{title}</h1>
-      {width < 768 ? <FaMobileAlt />
-        : width < 992 ? <FaTabletAlt />
-          : <FaLaptop />}
+      {width < 768 ? Mobile
+        : width < 992 ? Tablet
+          : LapTop}
     </header>
   )
 }
