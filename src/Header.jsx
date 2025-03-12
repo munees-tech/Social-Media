@@ -7,9 +7,9 @@ const Header = () => {
   return (
     <header className="Header">
       <h1>{title}</h1>
-      {width < 768 ? Mobile
-        : width < 992 ? Tablet
-          : LapTop}
+      {width < 768 ? "Mobile"
+        : width < 992 ? "Tablet"
+          : "LapTop"}
     </header>
   )
 }
